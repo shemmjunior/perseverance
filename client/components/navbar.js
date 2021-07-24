@@ -17,7 +17,7 @@ export default function Navbar({ children }) {
         </Button>
       </Header>
       <Content className={styles.content}>
-        <div>{children}</div>
+        {children}
       </Content>
       <Footer style={{ textAlign: "center" }}>Some button Contents</Footer>
     </Layout>

@@ -1,3 +1,8 @@
-.upload_field {
-    width: 300px !important;
+.upload_card {
+    height: 70vh;
 }
+
+.upload_field {
+    height: 50vh !important;
+}
+

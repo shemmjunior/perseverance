@@ -6,11 +6,11 @@
 
 .nav_right_items {
   float: right;
-  margin: 16px 24px 16px 0;
+  margin: 16px 0;
   color: white !important;
 }
 
 .content {
   height: 90vh;
-  margin: 16px 24px;
+  margin: 30px 50px;
 }
