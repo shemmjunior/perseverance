@@ -1,10 +1,10 @@
-package com.fileServer;
+package com.fileserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FileServerApplicationTests {
+class FileApplicationTests {
 
 	@Test
 	void contextLoads() {
