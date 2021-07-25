@@ -14,13 +14,18 @@ public class FileUploadController {
     FileUploadService fileUploadService;
 
     @PostMapping
-    public void uploadFile(@RequestParam("file") MultipartFile file) throws IllegalStateException, IOException {
-        fileUploadService.uploadFile(file);
+    public String uploadFile(@RequestParam("file") MultipartFile file) throws IllegalStateException {
+        try {
+            fileUploadService.uploadFile(file);
+            return  "Sucessfully Uploaded";
+        } catch (IOException ex) {
+            return "Could not determine file type.";
+        }
     }
 
-    @GetMapping
-    public String getFile() {
-        return "Hole";
+    @GetMapping("/{fileName}")
+    public String getFile(@PathVariable String fileName) {
+        return fileName;
     }
 
 }
